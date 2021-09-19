@@ -26,7 +26,15 @@ function Header() {
       <div className="header__nav">
         <div className="header__nav__items">
           <span className="headerNavItemLine1">Hello User</span>
-          <span className="headerNavItemLine2">Sign In</span>
+          <Link
+            to="/login"
+            style={{
+              textDecoration: "inherit",
+              color: "inherit",
+            }}
+          >
+            <span className="header__nav headerNavItemLine2">Sign In</span>
+          </Link>
         </div>
         <div className="header__nav__items">
           <span className="headerNavItemLine1">Returns</span>
